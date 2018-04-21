@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sistema Escolar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/application.css">
+    <link rel="shortcut icon" href="img/icon.png">
+  </head>
+  <body>
+    <div id="grid" class="centered grid__col--6">
+      <h2 id="type" class="centered grid__col--6">Login Sistema Escolar</h2>
+    <form action="principal.html"  method="post">
+      <br>
+      <div class="centered grid__col--6">
+        <label for="User">Usuario</label>
+        <input type="text" class="form__input" id="E_Mail" name="E_Mail" placeholder=" Digite o E-Mail" 
+               style="size: 10px" required autofocus>
+      </div>
+      <div class="centered grid__col--6">
+        <label for="Pass" class="sr-only">Senha</label>
+        <input type="password" class="form__input" id="Pass" name="Pass" placeholder="Digite a Senha" required>
+      </div>
+    
+      <div class="centered grid__col--6">
+        <button type="submit" class="form__btn" >Acessar</button>
+      </div>
+      
+      <div class="centered grid__col--6">
+        <label for="Lembrar" class="grid__col--4">Lembre-me</label>
+        <input type="checkbox" value="S" id="Lembrar" name="Lembrar" class="grid__col--1">
+      </div>
+
+  </form>
+  </div>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+      $('#toggle').click(function() {
+        $(this).next('.nav').toggleClass("is-collapsed-mobile");
+      });
+      </script>
+  </body>
+</html>
